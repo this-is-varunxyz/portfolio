@@ -1,0 +1,178 @@
+.dream {
+  width: 90%;
+  height: 35vw;
+  background-color: #973700;
+
+  margin: 0 auto;
+  border-radius: 3vw;
+  display: flex;
+  position: sticky;
+  box-shadow: 0px 0px 100px black;
+  top: 2vw;
+  margin-bottom: 15.6vw;
+}
+.image {
+  height: 100%;
+  width: 40%;
+  border-radius: 3vw;
+  background-image: url(firewatch/dream.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.text {
+  width: 70%;
+  height: 100%;
+  border-radius: 3vw;
+  font-size: 2.3vw;
+  margin-left: 20px;
+  color: #ffaf1b;
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.hill-climb {
+  background-image: url(firewatch/hill-climb.png);
+  background-position: -11vw;
+}
+.hill-climb-div {
+  top: 4vw;
+}
+.radio {
+  background-image: url(firewatch/radio.jpg);
+  background-position: -11vw;
+}
+.radio-div {
+  top: 6vw;
+}
+.final-div {
+  top: 8vw;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.thanks {
+  width: 100%;
+  height: 20%;
+  border-radius: 3vw;
+  font-size: 5vw;
+  color: #ffaf1b;
+
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.icons {
+  height: 4vw;
+  background-repeat: no-repeat;
+
+  width: 4vw;
+
+  background-size: contain;
+  background-image: url(firewatch/bxl-instagram.svg);
+}
+.icon2 {
+  background-image: url(firewatch/bxl-linkedin-square.svg);
+}
+
+.icon3 {
+  background-image: url(firewatch/bxl-twitter.svg);
+}
+.icon4 {
+  background-image: url(firewatch/bxl-gmail.svg);
+}
+
+.varun {
+  width: 100%;
+  height: 5.2vw;
+  font-size: 2vw;
+  margin-top: 1vw;
+}
+
+.contact-btn {
+  margin-top: 1vw;
+
+  width: 10vw;
+  height: 4vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #973700;
+}
+.contact-span {
+  font-size: 2vw;
+  text-align: center;
+  font-weight: lighter;
+}
+body {
+  height: 500vw;
+}
+.icons-div {
+  background-color: #973700;
+  height: 10vw;
+  justify-content: space-evenly;
+  padding-left: 30vw;
+  padding-right: 30vw;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .dream {
+    flex-direction: column;
+    height: 70vh;
+    top: 8vh;
+    padding-bottom: 1vh;
+  }
+  .hill-climb-div {
+    top: 12vh;
+  }
+  .radio-div {
+    top: 16vh;
+  }
+  .final-div {
+    top: 20vh;
+  }
+  .image {
+    height: 70%;
+    width: 100%;
+  }
+  body {
+    height: 7000vw;
+  }
+  .project-div {
+    margin-bottom: 15vh;
+  }
+  .text {
+    width: 100%;
+    padding-left: 1vh;
+    font-size: 2vh;
+    margin: 0;
+  }
+  .thanks {
+    font-size: 5vh;
+  }
+  .contact-span {
+    font-size: 6vh;
+  }
+  .contact-btn {
+    width: 24vh;
+    height: 8vh;
+  }
+  .icons-div{
+    height: 3vw;
+    padding-left: 10vw;
+  padding-right: 10vw;
+  }
+  .varun{
+    font-size: 2vh;
+    margin-top: 4vh;
+  }
+  .icons{
+    width: 7vh;
+    height: 7vh;
+  }
+}
