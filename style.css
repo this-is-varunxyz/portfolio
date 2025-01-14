@@ -332,15 +332,15 @@ body {
 
   }
 
-  @keyframes parllax-bg1 { to { transform: translateY(2vh); } }
-  @keyframes parllax-bg2 { to { transform: translateY(6vh); } }
-  @keyframes parllax-bg3 { to { transform: translateY(12vh); } }
-  @keyframes parllax-bg4 { to { transform: translateY(14vh); } }
-  @keyframes parllax-bg5 { to { transform: translateY(17vh); } }
-  @keyframes parllax-bg6 { to { transform: translateY(25vh); } }
-  @keyframes parllax-bg7 { to { transform: translateY(29vh); } }
-  @keyframes parllax-bg8 { to { transform: translateY(34vh); } }
-  @keyframes parllax-bg9 { to { transform: translateY(37vh); } }
+  @keyframes parallax-bg1 { to { transform: translateY(5vh); } }
+  @keyframes parallax-bg2 { to { transform: translateY(10vh); } }
+  @keyframes parallax-bg3 { to { transform: translateY(15vh); } }
+  @keyframes parallax-bg4 { to { transform: translateY(20vh); } }
+  @keyframes parallax-bg5 { to { transform: translateY(25vh); } }
+  @keyframes parallax-bg6 { to { transform: translateY(30vh); } }
+  @keyframes parallax-bg7 { to { transform: translateY(35vh); } }
+  @keyframes parallax-bg8 { to { transform: translateY(40vh); } }
+  @keyframes parallax-bg9 { to { transform: translateY(45vh); } }
 }
 @media (max-width: 1760px) {
   .about{
