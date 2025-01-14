@@ -1,22 +1,24 @@
+/* Global Styles */
 * {
   margin: 0;
-  .average-regular {
-    font-family: "Average", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
   box-sizing: border-box;
   padding: 0;
 }
-.parllax {
-  height: 100vh;
- 
-  margin-bottom: 1000px;
+
+.average-regular {
+  font-family: "Average", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
   background-color: rgba(33, 0, 2, 255);
-  
+}
+
+/* Parallax Base Styles */
+.parllax {
+  height: 100vh;
+  margin-bottom: 1000px;
 }
 
 .parllax-container {
@@ -32,201 +34,324 @@ body {
   width: 100%;
   background-size: auto 100%;
   background-position: center bottom;
+  will-change: transform;
 }
 
-/* Background layers with optimized animations */
-.parllax .bg1 {
-  background-image: url(firewatch/0z.png);
-  animation: parllax-bg1 linear;
+/* Background Layers */
+.parllax .bg1 { background-image: url(firewatch/0z.png); }
+.parllax .bg2 { background-image: url(firewatch/1zz.png); }
+.parllax .bg3 { background-image: url(firewatch/2.png); }
+.parllax .bg4 { background-image: url(firewatch/3zz.png); }
+.parllax .bg5 { background-image: url(firewatch/4zz.png); }
+.parllax .bg6 { background-image: url(firewatch/5zz.png); }
+.parllax .bg7 { background-image: url(firewatch/6zz.png); }
+.parllax .bg8 { background-image: url(firewatch/7zz.png); }
+.parllax .bg9 { background-image: url(firewatch/8zz.png); }
+
+/* Apply animations */
+.parllax [class^="bg"] {
+  animation-duration: 1s;
+  animation-timing-function: linear;
   animation-timeline: scroll();
 }
 
-.parllax .bg2 {
-  background-image: url(firewatch/1zz.png);
-  animation: parllax-bg2 linear;
-  animation-timeline: scroll();
-}
+.parllax .bg1 { animation-name: parllax-bg1; }
+.parllax .bg2 { animation-name: parllax-bg2; }
+.parllax .bg3 { animation-name: parllax-bg3; }
+.parllax .bg4 { animation-name: parllax-bg4; }
+.parllax .bg5 { animation-name: parllax-bg5; }
+.parllax .bg6 { animation-name: parllax-bg6; }
+.parllax .bg7 { animation-name: parllax-bg7; }
+.parllax .bg8 { animation-name: parllax-bg8; }
+.parllax .bg9 { animation-name: parllax-bg9; }
 
-.parllax .bg3 {
-  background-image: url(firewatch/2.png);
-  animation: parllax-bg3 linear;
-  animation-timeline: scroll();
-}
-
-.parllax .bg4 {
-  background-image: url(firewatch/3zz.png);
-  animation: parllax-bg4 linear;
-  animation-timeline: scroll();
-}
-
-.parllax .bg5 {
-  background-image: url(firewatch/4zz.png);
-  animation: parllax-bg5 linear;
-  animation-timeline: scroll();
-}
-
-.parllax .bg6 {
-  background-image: url(firewatch/5zz.png);
-  animation: parllax-bg6 linear;
-  animation-timeline: scroll();
-}
-
-.parllax .bg7 {
-  background-image: url(firewatch/6zz.png);
-  animation: parllax-bg7 linear;
-  animation-timeline: scroll();
-}
-
-.parllax .bg8 {
-  background-image: url(firewatch/7zz.png);
-  animation: parllax-bg8 linear;
-  animation-timeline: scroll();
-}
-
-.parllax .bg9 {
-  background-image: url(firewatch/8zz.png);
-  animation: parllax-bg9 linear;
-  animation-timeline: scroll();
-}
-.parllax .bg10{
-  color: white;
-  z-index:1;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 400px;
- 
-}
-
-.about-section {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10vh;
-  perspective: 1000px;
-}
-
-.about {
-  animation: parllax-bg9 linear;
-  animation-timeline: scroll();
-  background-color: rgba(255, 255, 255, 0.03);    height: 50vh; width: 85%; display: flex; border-radius: 50px;   
-}
-
-
-
-
+/* Default Animations with Adjusted Gaps */
 @keyframes parllax-bg1 {
   to {
-    transform: translateY(200px);
+    transform: translateY(2vh);
   }
 }
 
 @keyframes parllax-bg2 {
   to {
-    transform: translateY(500px);
+    transform: translateY(6vh);
   }
 }
 
 @keyframes parllax-bg3 {
   to {
-    transform: translateY(800px);
+    transform: translateY(10vh);
   }
 }
 
 @keyframes parllax-bg4 {
   to {
-    transform: translateY(1100px);
+    transform: translateY(16vh);
   }
 }
 
 @keyframes parllax-bg5 {
   to {
-    transform: translateY(1400px);
+    transform: translateY(24vh);
   }
 }
 
 @keyframes parllax-bg6 {
   to {
-    transform: translateY(1700px);
+    transform: translateY(32vh);
   }
 }
 
 @keyframes parllax-bg7 {
   to {
-    transform: translateY(2000px);
+    transform: translateY(42vh);
   }
 }
 
 @keyframes parllax-bg8 {
   to {
-    transform: translateY(2300px);
+    transform: translateY(54vh);
   }
 }
 
 @keyframes parllax-bg9 {
   to {
-    transform: translateY(2600px);
+    transform: translateY(68vh);
   }
 }
-.anime{
-  height: 15vh;   background-color: #FFAF1B; position: relative; bottom: 277px; left: -5px; width: 1px;
-  transition: right 2s ease;
-  transition: width 2s ease ;
-  z-index: 0;
+
+/* Title Layer */
+.parllax .bg10 {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15vh;
+  top: 2vw;
 }
 
-.next:hover{
-  
-  .anime{
-    right: -100px;
-    width: 100%;
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
-  }
-  .anime2{
-    right: -100px;
-    width: 100%;
+.about {
+  animation: parllax-bg5 linear;
+  animation-timeline: scroll();
+  background-color: rgba(255, 255, 255, 0.03);
+  height: 25vw;
+  width: 85%;
+  display: flex;
+  border-radius: 2vw;
+}
 
-  }
-  
- 
+/* Profile Section */
+.profile-section {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  background-image: url(varun.png);
+  background-size: contain;
+  height: 90%;
+  background-position: left;
+  width: 90%;
+  border-radius: 100%;
+  box-shadow: 0px 0px 150px #ffaf1b;
   border: none;
-  color: black;
-  
-  cursor: pointer;
-  .next-span{
-  color: rgb(33, 0, 2);
-    
-  }
-
 }
-.anime2{
-  height: 15vh;   background-color: #FFAF1B; position: relative; bottom: 270px; left: -5px; width: 1px;
-  transition: right 2s ease;
-  transition: width 2s ease ;
+
+/* Animation Elements */
+.anime {
+  height: 15vh;
+  background-color: #ffaf1b;
+  position: relative;
+  bottom: 277px;
+  left: -5px;
+  width: 1px;
+  transition: right 2s ease, width 2s ease;
   z-index: 0;
 }
-.anime3{
+
+.anime2 {
+  height: 15vh;
+  background-color: #ffaf1b;
+  position: relative;
+  bottom: 270px;
+  left: -5px;
+  width: 1px;
+  transition: right 2s ease, width 2s ease;
+  z-index: 0;
+}
+
+.anime3 {
   height: 10vh;
   bottom: 211px;
   left: -7px;
 }
-.profile-section{
-  background-color: grn; height: 100%; width: 30%; display: flex; justify-content: center; align-items: center; 
+
+/* Text Content */
+.text-thing {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.profile{
-  background-image: url(varun.png); background-position: left; background-size: contain; height: 90%; width: 90%; border-radius: 100%;  box-shadow: 0px 0px 150px #FFAF1B; border: none; 
+
+.about-para {
+  color: white;
+  font-size: 4vw;
+  height: 4vw;
+  margin-top: 3vw;
 }
-.text-thing{
-  background-color:e; width: 70%; height: 100%;  display: flex; flex-direction: column;    
+
+.varun-para {
+  color: white;
+  font-size: 6vw;
+  height: 6vw;
+  margin-top: 1vw;
 }
-.about-para{
-  color: white; font-size: 150px;  height:150px; margin-top: 120px;
+
+.and-para {
+  color: white;
+  font-size: 4vw;
+  height: 4vw;
+  margin-top: 1vw;
 }
-.varun-para{
-  color: white; font-size: 280px;  height:200px;
+
+.craft-para {
+  color: white;
+  font-size: 2vw;
+  margin-top: 2.7vw;
+  font-weight: lighter;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 2vw;
 }
-.and-para{
-  color: white; font-size: 150px;  height:150px; margin-top: 120px;
+
+/* Hover Effects */
+.next:hover {
+  border: none;
+  color: black;
+  cursor: pointer;
 }
-.craft-para{
-  color: white; font-size: 100px; margin-top: 150px; font-weight: lighter; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  height:200px; 
+
+.next:hover .anime,
+.next:hover .anime2 {
+  right: -100px;
+  width: 100%;
+}
+
+.next:hover .next-span {
+  color: rgb(33, 0, 2);
+}
+.first-page{
+  margin-top: 1vw;
+}
+.next-btn{
+  padding: 1vw; padding-bottom: 2vw; height: 5vw;  display: flex; justify-content: center; align-items: center; 
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 750px) {
+  @keyframes parllax-bg1 { to { transform: translateY(3vh); } }
+  @keyframes parllax-bg2 { to { transform: translateY(9vh); } }
+  @keyframes parllax-bg3 { to { transform: translateY(15vh); } }
+  @keyframes parllax-bg4 { to { transform: translateY(24vh); } }
+  @keyframes parllax-bg5 { to { transform: translateY(32vh); } }
+  @keyframes parllax-bg6 { to { transform: translateY(40vh); } }
+  @keyframes parllax-bg7 { to { transform: translateY(50vh); } }
+  @keyframes parllax-bg8 { to { transform: translateY(62vh); } }
+  @keyframes parllax-bg9 { to { transform: translateY(76vh); } }
+
+ 
+}
+
+@media (max-width: 600px) {
+  .parllax .bg10 {
+    font-size: 7vh;
+    top: 25vh;
+  }
+  .next-btn{
+    height: 9vh;
+    width: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+  }
+  .next-span1{
+    font-size: 4vh;
+
+  }
+
+  .about {
+    height: 40vw;
+    
+  }
+
+  .about-para,
+  .varun-para,
+  .and-para,
+  .craft-para {
+    font-size: calc(1em + 1vw);
+    height: auto;
+    margin-top: 1.5vw;
+    align-self: center;
+    text-align: center;
+    
+    
+
+
+  }
+  
+  .profile{
+    background-repeat: repeat;
+    width: 100vw;
+    background-position: left;
+    height: 25vw;
+  }
+  .about{
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .first-page{
+    top: 300px;
+    position: relative;
+    animation: parllax-bg9 linear 
+
+  }
+
+  @keyframes parllax-bg1 { to { transform: translateY(2vh); } }
+  @keyframes parllax-bg2 { to { transform: translateY(6vh); } }
+  @keyframes parllax-bg3 { to { transform: translateY(12vh); } }
+  @keyframes parllax-bg4 { to { transform: translateY(14vh); } }
+  @keyframes parllax-bg5 { to { transform: translateY(17vh); } }
+  @keyframes parllax-bg6 { to { transform: translateY(25vh); } }
+  @keyframes parllax-bg7 { to { transform: translateY(29vh); } }
+  @keyframes parllax-bg8 { to { transform: translateY(34vh); } }
+  @keyframes parllax-bg9 { to { transform: translateY(37vh); } }
+}
+@media (max-width: 1760px) {
+  .about{
+    margin-top: -500px;
+  }
+}@media (max-width: 900px) {
+  .about{
+    margin-top: -700px;
+  }
+  .first-page{
+    animation: parllax-bg1 linear ;
+    margin-top: -400px;
+  }
 }
